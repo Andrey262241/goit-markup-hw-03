@@ -1,0 +1,362 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --secondary-color: #757575;
+  --accent-color: #212121;
+  --effect-color: #2196f3;
+  --button-color-effect: #188ce8;
+  --text-color-on-dark-fone: #ffffff;
+  --dark-fone-banner: #2f303a;
+  --contact-color-futer: rgba(255, 255, 255, 0.6);
+  --button-color: #f5f4fa;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+  padding-bottom: 60px;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--accent-color);
+  letter-spacing: 0.03em;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /*outline: 2px solid red;*/
+  margin: 0 auto;
+}
+
+/*==================== HEDER ====================*/
+
+.logo-white-item {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--effect-color);
+}
+
+.main-heder {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+
+  margin-right: 93px;
+}
+
+.contact-info-section {
+  background-color: var(--dark-fone-banner);
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--effect-color);
+}
+
+.contact-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--effect-color);
+}
+
+.contact-list {
+  margin-left: auto;
+}
+
+.heder-container {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.heder-navigation {
+  display: flex;
+  gap: 50px;
+}
+
+.heder-contact-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/*==================== HERO ==================== */
+
+.section-margin {
+  margin-bottom: 94px;
+}
+
+.banner {
+  font-family: var(--primary-font);
+  background-color: var(--dark-fone-banner);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color-on-dark-fone);
+
+  margin-bottom: 94px;
+  padding-bottom: 200px;
+}
+
+.banner-tex {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  max-width: 696px;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-btn {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--effect-color);
+  color: var(--text-color-on-dark-fone);
+
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--button-color-effect);
+}
+
+.modal-filter-btn {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background-color: var(--button-color);
+  color: var(--accent-color);
+
+  padding: 6px 22px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.modal-filter-btn:hover,
+.modal-filter-btn:focus {
+  background-color: var(--button-color-effect);
+  color: var(--text-color-on-dark-fone);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.features {
+  display: flex;
+  gap: 30px;
+}
+
+.team {
+  display: flex;
+  gap: 30px;
+}
+
+.product {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.product-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+
+.product-item-width {
+  width: calc(100%-60) / 3;
+}
+
+.team-item {
+  width: calc(100%-120px) / 4;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.hero-item {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-color);
+}
+
+.hero-title-list {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--accent-color);
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.hero-name-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.hero-profession-list {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero-content-list {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--accent-color);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.hero-content-item {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ==================== CONTACT INFO ==================== */
+
+.logo-dark-item {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--text-color-on-dark-fone);
+}
+
+.contact-list-link {
+  /*font-style: normal;*/
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  background-color: var(--dark-fone-banner);
+  color: var(--contact-color-futer);
+}
+
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--effect-color);
+}
+
+.contact-list-address:hover,
+.contact-list-address:focus {
+  color: var(--effect-color);
+}
+
+.contact-list-address {
+  /*font-style: normal;*/
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  background-color: var(--dark-fone-banner);
+  color: var(--text-color-on-dark-fone);
+}
+
+.logo-padding {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
