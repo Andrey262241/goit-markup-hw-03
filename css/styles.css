@@ -30,7 +30,7 @@ ol {
 
 address {
   font-style: normal;
-  padding-bottom: 60px;
+  margin-top: 20px;
 }
 
 img {
@@ -146,18 +146,13 @@ button {
 
 /*==================== HERO ==================== */
 
-.section-margin {
-  margin-bottom: 94px;
-}
-
 .banner {
   font-family: var(--primary-font);
   background-color: var(--dark-fone-banner);
   text-align: center;
   text-transform: uppercase;
   color: var(--text-color-on-dark-fone);
-
-  margin-bottom: 94px;
+  padding-top: 200px;
   padding-bottom: 200px;
 }
 
@@ -168,10 +163,8 @@ button {
   letter-spacing: 0.06em;
 
   max-width: 696px;
-  padding-top: 200px;
-  padding-bottom: 30px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
 }
 
 .modal-btn {
@@ -185,6 +178,8 @@ button {
 
   display: block;
   margin: 0 auto;
+  width: 216px;
+  height: 50px;
 }
 
 .modal-btn:hover,
@@ -192,23 +187,9 @@ button {
   background-color: var(--button-color-effect);
 }
 
-.modal-filter-btn {
-  font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  background-color: var(--button-color);
-  color: var(--accent-color);
-
-  padding: 6px 22px;
-  margin-top: 94px;
-  margin-bottom: 50px;
-}
-
-.modal-filter-btn:hover,
-.modal-filter-btn:focus {
-  background-color: var(--button-color-effect);
-  color: var(--text-color-on-dark-fone);
+.section-margin {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -221,38 +202,7 @@ button {
   clip: rect(0 0 0 0);
 }
 
-.features {
-  display: flex;
-  gap: 30px;
-}
-
-.team {
-  display: flex;
-  gap: 30px;
-}
-
-.product {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-}
-
-.product-item {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 94px;
-}
-
-.product-item-width {
-  width: calc(100%-60) / 3;
-}
-
-.team-item {
-  width: calc(100%-120px) / 4;
-}
-
-.about-list {
+.hero-content {
   display: flex;
   gap: 30px;
 }
@@ -272,13 +222,37 @@ button {
   color: var(--secondary-color);
 }
 
+.section-work {
+  padding-bottom: 94px;
+}
+
 .hero-title-list {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   color: var(--accent-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   text-align: center;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team {
+  display: flex;
+  gap: 30px;
+}
+
+.team-item {
+  width: calc(100%-120px) / 4;
+}
+
+.name-profession {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .hero-name-list {
@@ -286,8 +260,6 @@ button {
   font-size: 16px;
   line-height: 1.19;
   color: var(--accent-color);
-  text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -295,8 +267,48 @@ button {
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondary-color);
-  text-align: center;
-  margin-bottom: 30px;
+}
+
+/* ==================== PORTFOLIO ==================== */
+
+.heder-portfolio {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.product {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.modal-filter-btn {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background-color: var(--button-color);
+  color: var(--accent-color);
+
+  min-width: 73px;
+}
+
+.modal-filter-btn:hover,
+.modal-filter-btn:focus {
+  background-color: var(--button-color-effect);
+  color: var(--text-color-on-dark-fone);
+}
+
+.product-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.product-item-width {
+  width: calc(100%-60) / 3;
 }
 
 .hero-content-list {
@@ -305,7 +317,7 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--accent-color);
-  text-align: center;
+  /*text-align: center;*/
   margin-top: 20px;
   margin-bottom: 4px;
 }
@@ -314,11 +326,21 @@ button {
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-color);
-  text-align: center;
+  /*text-align: center;*/
   margin-bottom: 20px;
 }
 
+.product-tex {
+  padding: 20px 24px;
+  border: 1px solid var(--secondary-color);
+}
+
 /* ==================== CONTACT INFO ==================== */
+
+.contact-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .logo-dark-item {
   font-family: var(--secondary-font);
@@ -354,9 +376,4 @@ button {
   line-height: 1.71;
   background-color: var(--dark-fone-banner);
   color: var(--text-color-on-dark-fone);
-}
-
-.logo-padding {
-  padding-top: 60px;
-  padding-bottom: 20px;
 }

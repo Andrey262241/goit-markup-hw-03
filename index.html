@@ -57,7 +57,7 @@
     <main>
       <!-- HERO-->
       <section class="banner">
-        <div class="container ">
+        <div class="container banner-container">
           <h1 class="banner-tex">Ефективні рішення для вашого бізнесу</h1>
           <button class="modal-btn" type="button">Замовити послугу</button>
         </div>
@@ -65,7 +65,7 @@
       <section class="section-margin">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-            <ul class="hero-content list features">
+            <ul class="hero-content list">
               <li class="hero-list">
                 <h3 class="hero-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                 <p class="hero-item">
@@ -96,7 +96,7 @@
             </ul>
         </div>
       </section>
-      <section class="section-margin">
+      <section class="section-work">
         <div class="container">
           <h2 class="hero-title-list">Чим ми займаємося</h2>
           <ul class="about-list list">
@@ -127,7 +127,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-margin">
+      <section class="section-work">
         <div class="container">
           <h2 class="hero-title-list">Наша команда</h2>
           <ul class="list team">
@@ -138,8 +138,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="hero-name-list">Ігор Дем'яненко</h3>
-              <p class="hero-profession-list" lang="en">Product Designer</p>
+              <div class="name-profession">
+                <h3 class="hero-name-list">Ігор Дем'яненко</h3>
+                <p class="hero-profession-list" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -148,8 +150,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="hero-name-list">Ольга Рєпіна</h3>
-              <p class="hero-profession-list" lang="en">Frontend Developer</p>
+              <div class="name-profession">
+                <h3 class="hero-name-list">Ольга Рєпіна</h3>
+                <p class="hero-profession-list" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -158,8 +162,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="hero-name-list">Микола Тарасов</h3>
-              <p class="hero-profession-list" lang="en">Marketing</p>
+              <div class="name-profession">
+                <h3 class="hero-name-list">Микола Тарасов</h3>
+                <p class="hero-profession-list" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -168,8 +174,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="hero-name-list">Михайло Єрмаков</h3>
-              <p class="hero-profession-list" lang="en">UI Designer</p>
+              <div class="name-profession">
+                <h3 class="hero-name-list">Михайло Єрмаков</h3>
+                <p class="hero-profession-list" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -177,11 +185,9 @@
     </main>
     <!-- FOOTER-->
     <footer class="contact-info-section">
-      <div class="container">
-      <div class="logo-padding">
+      <div class="container contact-footer">
         <a class="logo-dark-item link" href="./index.html" lang="en">
           <span class="logo-white-item">Web</span><span class="logo-dark-item">Studio</span></a>
-      </div>
       <address>
           <ul class="list">
             <li class="contact-info">
