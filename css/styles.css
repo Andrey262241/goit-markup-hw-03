@@ -279,7 +279,6 @@ button {
   display: flex;
   gap: 8px;
   justify-content: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -304,7 +303,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .product-item-width {
