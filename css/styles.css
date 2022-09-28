@@ -272,7 +272,7 @@ button {
 /* ==================== PORTFOLIO ==================== */
 
 .heder-portfolio {
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid #eeeeee;
 }
 
 .product {
@@ -291,7 +291,7 @@ button {
   background-color: var(--button-color);
   color: var(--accent-color);
 
-  min-width: 73px;
+  padding: 6px 25px;
 }
 
 .modal-filter-btn:hover,
@@ -318,7 +318,6 @@ button {
   letter-spacing: 0.06em;
   color: var(--accent-color);
   /*text-align: center;*/
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 
@@ -327,17 +326,16 @@ button {
   line-height: 1.88;
   color: var(--secondary-color);
   /*text-align: center;*/
-  margin-bottom: 20px;
 }
 
 .product-tex {
   padding: 20px 24px;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid #eeeeee;
 }
 
 /* ==================== CONTACT INFO ==================== */
 
-.contact-footer {
+.contact-info-section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -348,6 +346,10 @@ button {
   font-size: 26px;
   line-height: 1.19;
   color: var(--text-color-on-dark-fone);
+}
+
+.contact-info:nth-child(-n + 2) {
+  margin-bottom: 9px;
 }
 
 .contact-list-link {
